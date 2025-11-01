@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Terminus – The Coding Club</title>
+	<meta name="description" content="Terminus is a student coding club hosting events, projects, and workshops.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body class="page-photo" data-photo="coding-team">
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="./index.html">Terminus</a>
+			<nav class="nav" id="site-nav">
+				<a href="./about.html">About</a>
+				<a href="./events.html">Events</a>
+				<a href="./projects.html">Projects</a>
+				<a class="btn" href="./join.html">Join</a>
+			</nav>
+			<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="section hero hero-photo" data-photo="coding-team">
+			<div class="container">
+				<h1>Build. Learn. Ship.</h1>
+				<p>We are a community of builders learning by doing—meetups, hack nights, and real projects.</p>
+				<div class="cta-row">
+					<a class="btn primary" href="./join.html">Join the club</a>
+					<a class="btn ghost" href="./projects.html">See projects</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section">
+			<div class="container grid two">
+				<div>
+					<h2>About Terminus</h2>
+					<p>Terminus is a student‑led coding club. We host workshops, coding sprints, and collaborative builds across web, mobile, and AI. Beginners welcome.</p>
+					<ul class="checklist">
+						<li>Weekly sessions</li>
+						<li>Beginner friendly</li>
+						<li>Project mentorship</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3>What we do</h3>
+					<p>Talks, hands‑on workshops, hackathons, and shipping real projects together.</p>
+					<div class="stats">
+						<div><strong>200+</strong><span>Members</span></div>
+						<div><strong>25+</strong><span>Projects</span></div>
+						<div><strong>40+</strong><span>Events</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="events" class="section muted section-photo" data-photo="event-crowd">
+			<div class="container">
+				<h2>Upcoming Events</h2>
+				<div class="grid three cards">
+					<article class="card">
+						<h3>Intro to Web Dev</h3>
+						<p>HTML, CSS, and JS fundamentals. Perfect for beginners.</p>
+						<span class="meta">Next: Every Friday</span>
+					</article>
+					<article class="card">
+						<h3>Hack Night</h3>
+						<p>Drop in, pair up, and build something cool in 2 hours.</p>
+						<span class="meta">Next: First Wednesday</span>
+					</article>
+					<article class="card">
+						<h3>AI Study Group</h3>
+						<p>Work through ML/AI topics with peers and mentors.</p>
+						<span class="meta">Next: Monthly</span>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="section">
+			<div class="container">
+				<h2>Featured Projects</h2>
+				<div class="grid three cards">
+					<article class="card">
+						<h3>Club Website</h3>
+						<p>Static site with a modern, responsive layout and clean design system.</p>
+						<a class="link" href="./join.html">Contribute →</a>
+					</article>
+					<article class="card">
+						<h3>Event Manager</h3>
+						<p>Simple tool for publishing events and collecting RSVPs.</p>
+						<a class="link" href="./join.html">Contribute →</a>
+					</article>
+					<article class="card">
+						<h3>Open Source Tools</h3>
+						<p>Utilities and templates we reuse across projects.</p>
+						<a class="link" href="./join.html">Contribute →</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="join" class="section muted section-photo" data-photo="workspace">
+			<div class="container grid two">
+				<div>
+					<h2>Join Terminus</h2>
+					<p>Fill this short form and we’ll get back with event invites and project channels.</p>
+					<form class="form" onsubmit="event.preventDefault(); alert('Thanks for joining!');">
+						<label>
+							<span>Name</span>
+							<input type="text" required placeholder="Your name">
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" required placeholder="you@example.com">
+						</label>
+						<label>
+							<span>Interest</span>
+							<select>
+								<option>Web</option>
+								<option>Mobile</option>
+								<option>AI/ML</option>
+								<option>Other</option>
+							</select>
+						</label>
+						<button class="btn primary" type="submit">Submit</button>
+					</form>
+				</div>
+				<div class="card">
+					<h3>Why join?</h3>
+					<ul class="checklist">
+						<li>Learn by building</li>
+						<li>Peer mentorship</li>
+						<li>Portfolio projects</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> Terminus. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="./script.js"></script>
+</body>
+</html>
