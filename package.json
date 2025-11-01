@@ -1,0 +1,21 @@
+{
+  "name": "terminus-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "node scripts/scrape.js",
+    "serve": "serve public -l 5173",
+    "preview": "npm run scrape && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^24.27.0",
+    "serve": "^14.2.5",
+    "website-scraper": "^6.0.0",
+    "website-scraper-puppeteer": "^2.0.0"
+  }
+}

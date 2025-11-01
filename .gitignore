@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+serve.err.log
+serve.out.log
+
